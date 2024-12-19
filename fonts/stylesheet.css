@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Comfortaa-Semi';
+    src: url('Comfortaa-SemiBold.woff2') format('woff2'),
+        url('Comfortaa-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('Comfortaa-Bold.woff2') format('woff2'),
+        url('Comfortaa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.woff2') format('woff2'),
+        url('Comfortaa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nerko One';
+    src: url('NerkoOne-Regular.woff2') format('woff2'),
+        url('NerkoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

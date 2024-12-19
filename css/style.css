@@ -1,0 +1,171 @@
+@import url("../fonts/stylesheet.css");
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--seconde-color);
+  border-radius: 10px;
+}
+
+:root {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One";
+}
+body {
+  font-family: "Comfortaa";
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+/* Start Nav  */
+
+header img {
+  width: 100%;
+  height: auto;
+  object-position: center;
+}
+nav {
+  background-color: #3a497b;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -30px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+nav img {
+  width: 40px;
+  height: 40px;
+  height: auto;
+}
+
+.nav-item a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12.5px;
+}
+.nav-item.active a,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+/* End Nav */
+/* Start Game Section */
+.badge-gray {
+  background-color: var(--seconde-color);
+}
+.free-color {
+  background-color: #3a497b;
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+.games-section .game-card .card-body h3 {
+  font-size: 17px;
+}
+.games-section .game-card .card-text {
+  font-size: 13px;
+  height: 50px;
+}
+.games-section .game-card {
+  filter: grayscale(0.8);
+  transition: transform 0.5s ease, filter 0.5s ease;
+  -webkit-transition: transform 0.5s ease, filter 0.5s ease;
+  -moz-transition: transform 0.5s ease, filter 0.5s ease;
+  -ms-transition: transform 0.5s ease, filter 0.5s ease;
+  -o-transition: transform 0.5s ease, filter 0.5s ease;
+  -webkit-filter: grayscale(0.8);
+}
+.games-section .game-card:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-filter: grayscale(0);
+}
+.games-section .game-card:hover .free-color {
+  background-color: #5a6bb7;
+}
+
+/* End Game Section */
+
+/* Details Modal */
+#fullscreenModal .modal-content {
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+#fullscreenModal .btn-close {
+  color: #ffffff;
+  background-color: transparent;
+  opacity: 1;
+  --bs-btn-close-bg: none;
+}
+
+.modal-dialog-scrollable .modal-body {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.modal-body {
+  padding-right: 16px;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.325);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #5a6bb7;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 576px) {
+  header img {
+    height: 134px;
+  }
+}
+
+@media (min-width: 992px) {
+  header img {
+    height: 200px;
+  }
+}

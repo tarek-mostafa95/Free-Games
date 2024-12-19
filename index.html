@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Pick Your Favourite Free Game">
+    <meta name="description" content="Free Games!">
+
+    <title>Free Games</title>
+
+    <link rel="shortcut icon" href="./images/logo-sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/wraper.png" alt="games" class="object-fit-cover ">
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark rounded-4 position-sticky top-0 z-3  col-md-8 col-lg-9">
+        <div class="d-flex ms-2 ">
+            <img src="./images/logo-sm.png" alt="Games Logo">
+            <h1 class="text-uppercase fs-2"> Game Reviews </h1>
+        </div>
+
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-3 me-2">
+                <li class="nav-item active ps-3" id="mmorpg">
+                    <a class="nav-link" data-bs-toggle="collapse">mmorpg</a>
+                </li>
+                <li class="nav-item  ps-3" id="shooter">
+                    <a class="nav-link" data-bs-toggle="collapse">shooter</a>
+                </li>
+                <li class="nav-item  ps-3" id="sailing">
+                    <a class="nav-link" data-bs-toggle="collapse">sailing</a>
+                </li>
+                <li class="nav-item  ps-3" id="permadeath">
+                    <a class="nav-link" data-bs-toggle="collapse">permadeath</a>
+                </li>
+                <li class="nav-item  ps-3" id="permadeath">
+                    <a class="nav-link" data-bs-toggle="collapse">superhero</a>
+                </li>
+                <li class="nav-item  ps-3" id="pixel">
+                    <a class="nav-link" data-bs-toggle="collapse">pixel</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <main>
+        <section class="games-section">
+            <div class="container">
+                <div id="games-container" class="row mt-5 g-4">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="loader-container" style="display: none;">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- Details Game  Fullscreen Modal -->
+    <!-- Fullscreen Scrollable Modal -->
+    <div class="modal " id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="container d-flex justify-content-between mt-5">
+
+                    <h1>Details Game</h1>
+                    <button type="button" class="btn-close ms-auto p-4 " data-bs-dismiss="modal"
+                        aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
